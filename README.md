@@ -39,5 +39,10 @@ rostopic echo /arduino_pub1
 ```
 
 ### Additional Resources
+
+## nh.spinOnce() 
+- [roscpp -Callbacks and Spinning](https://wiki.ros.org/roscpp/Overview/Callbacks%20and%20Spinning) \
+In the background, ROS monitors socket connections for any topics you've subscribed to. When a message arrives, ROS pushes your subscriber callback onto a queue. It does not call it immediately. ROS only processes your callbacks when you tell it to with ros::spinOnce()
+[ROS answers link](https://answers.ros.org/question/11887/significance-of-rosspinonce/)
 - [Configure VS Code for rosserial_arduino](https://jim79.github.io/rosserial-arduino-vscode/)
 - [Video tutorial - Configure VS Code for rosserial_arduino](https://youtu.be/RZAXBMoWJcE)
